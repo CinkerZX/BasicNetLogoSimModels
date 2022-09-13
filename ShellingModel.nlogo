@@ -35,11 +35,10 @@ to go
       not any? turtles-here and demands-met? [ color ] of myself ; the color of the turtle of uper layer
     ]
     if any? happy-spots[
-      move-to min-one-of happy-spots [ distance myself ]
+      move-to min-one-of happy-spots [ distance myself ] ; move to the closest happy spot
     ]
   ]
 end
-
 
 @#$#@#$#@
 GRAPHICS-WINDOW
@@ -112,7 +111,7 @@ num-turtles
 num-turtles
 0
 count patches
-784.0
+992.0
 1
 1
 NIL

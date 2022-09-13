@@ -104,8 +104,8 @@ end
 GRAPHICS-WINDOW
 117
 31
-574
-489
+575
+490
 -1
 -1
 45.0
@@ -149,7 +149,7 @@ SLIDER
 613
 32
 786
-66
+65
 numFeatures
 numFeatures
 5
@@ -164,7 +164,7 @@ SLIDER
 613
 75
 786
-109
+108
 numTraits
 numTraits
 5
@@ -196,7 +196,7 @@ SWITCH
 33
 275
 137
-309
+308
 debug
 debug
 1
