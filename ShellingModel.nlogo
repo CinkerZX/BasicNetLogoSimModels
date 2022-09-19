@@ -5,6 +5,9 @@
 
 
 ; in the Interface, we define "GLOBAL var"
+
+extensions [vid bitmap]
+
 to setup
   clear-all
   set-default-shape turtles "square"
@@ -29,7 +32,15 @@ to-report demands-met? [ color-wanted ]
 end
 
 to go
-  if all? turtles [ demands-met? color ] [ stop ]
+;  if vid:recorder-status = "inactive"[
+;    vid:start-recorder
+;  ]
+;  vid:record-view
+  if all? turtles [ demands-met? color ] [
+;    vid:save-recording "ShellingModel.mp4"
+;    print vid:recorder-status
+    stop
+  ]
   ask turtles with [ not demands-met? color ] [
     let happy-spots patches with [
       not any? turtles-here and demands-met? [ color ] of myself ; the color of the turtle of uper layer
@@ -39,7 +50,6 @@ to go
     ]
   ]
 end
-
 @#$#@#$#@
 GRAPHICS-WINDOW
 210
@@ -111,7 +121,7 @@ num-turtles
 num-turtles
 0
 count patches
-992.0
+798.0
 1
 1
 NIL
@@ -126,7 +136,7 @@ proportion-wanted
 proportion-wanted
 0
 2
-0.5
+0.7
 0.1
 1
 NIL
