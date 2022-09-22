@@ -52,13 +52,13 @@ to go
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
-210
-10
-647
-448
+249
+31
+1087
+870
 -1
 -1
-13.0
+25.152
 1
 10
 1
@@ -121,7 +121,7 @@ num-turtles
 num-turtles
 0
 count patches
-798.0
+763.0
 1
 1
 NIL
